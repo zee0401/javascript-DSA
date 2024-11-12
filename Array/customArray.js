@@ -11,6 +11,10 @@ class myArray {
     delete this.data[-1];
     this.length--;
   }
+
+  get(index) {
+    return this.data[index];
+  }
 }
 const newArray = new myArray();
 
