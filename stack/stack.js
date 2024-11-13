@@ -17,13 +17,13 @@ class Stack {
     return this.stack.pop();
   }
 
-  // peek() {
-  //   if (this.isEmpty()) {
-  //     return "Stack is Empty. Can't perform peek.";
-  //   }
+  peek() {
+    if (this.isEmpty()) {
+      return "Stack is Empty. Can't perform peek.";
+    }
 
-  //   return this.stack[this.size() - 1];
-  // }
+    return this.stack[this.size() - 1];
+  }
 
   // isEmpty() {
   //   return this.size() === 0;
@@ -49,7 +49,7 @@ console.log(stack.pop());
 //   console.log(stack.pop());
 //   console.log(stack.pop());
 
-//   console.log(stack.peek());
+console.log(stack.peek());
 
 //   console.log(stack.isEmpty());
 
