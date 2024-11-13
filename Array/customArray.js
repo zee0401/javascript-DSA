@@ -26,6 +26,15 @@ class myArray {
     this.length--;
     return firstItem;
   }
+
+  unShift(data) {
+    for (let i = this.length; i > 0; i--) {
+      this.data[i] = this.data[i - 1];
+    }
+    this.data[0] = data;
+    // this.data[]
+    this.length++;
+  }
 }
 const newArray = new myArray();
 
@@ -37,4 +46,5 @@ newArray.push("banana");
 
 newArray.pop();
 newArray.shift();
+newArray.ubShift("orange");
 console.log(newArray);
