@@ -35,6 +35,17 @@ class myArray {
     // this.data[]
     this.length++;
   }
+  deleteCustomIndex(index) {
+    const item = this.data[index];
+
+    for (let i = index; i < this.length - 1; i++) {
+      this.data[i] = this.data[i + 1];
+    }
+    delete this.data[this.length - 1];
+
+    this.length--;
+    console.log(item);
+  }
 }
 const newArray = new myArray();
 
@@ -47,4 +58,5 @@ newArray.push("banana");
 newArray.pop();
 newArray.shift();
 newArray.ubShift("orange");
+newArray.deleteCustomIndex(1);
 console.log(newArray);
