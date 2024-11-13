@@ -9,13 +9,13 @@ class Stack {
     this.stack.push(element);
   }
 
-  // pop() {
-  //   if (this.isEmpty()) {
-  //     return "Stack is Empty. Can't perform pop.";
-  //   }
+  pop() {
+    if (this.isEmpty()) {
+      return "Stack is Empty. Can't perform pop.";
+    }
 
-  //   return this.stack.pop();
-  // }
+    return this.stack.pop();
+  }
 
   // peek() {
   //   if (this.isEmpty()) {
@@ -44,7 +44,7 @@ stack.push(420);
 
 console.log(stack.size());
 
-//   console.log(stack.pop());
+console.log(stack.pop());
 //   console.log(stack.pop());
 //   console.log(stack.pop());
 //   console.log(stack.pop());
