@@ -15,6 +15,17 @@ class myArray {
   get(index) {
     return this.data[index];
   }
+
+  shift() {
+    const firstItem = this.data[0];
+
+    for (let i = 0; i < this.length - 1; i++) {
+      this.data[i] = this.data[i + 1];
+    }
+    delete this.data[this.length - 1];
+    this.length--;
+    return firstItem;
+  }
 }
 const newArray = new myArray();
 
@@ -25,4 +36,5 @@ newArray.push("banana");
 // console.log(newArray.get(2))
 
 newArray.pop();
+newArray.shift();
 console.log(newArray);
