@@ -22,5 +22,7 @@ newArray.push("apple");
 newArray.push("mango");
 newArray.push("banana");
 
+// console.log(newArray.get(2))
+
 newArray.pop();
 console.log(newArray);
