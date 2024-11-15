@@ -10,6 +10,7 @@ function isValidParentheses(s) {
       }
     }
   }
+  return stack.length === 0;
 }
 
 console.log(isValidParentheses("{[()]}"));
