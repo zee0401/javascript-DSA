@@ -1,4 +1,4 @@
-const selectionSort = (arr) => {
+function selectionSort(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
     let minIndex = i;
     for (let j = i + 1; j < arr.length; j++) {
@@ -9,6 +9,6 @@ const selectionSort = (arr) => {
     [arr[minIndex], arr[i]] = [arr[i], arr[minIndex]];
   }
   return arr;
-};
+}
 
 console.log(selectionSort(arr)); // -7, -2 , 5, 1000
