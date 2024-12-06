@@ -1,4 +1,4 @@
-const insertionSort = (arr) => {
+function insertionSort(arr) {
   for (let i = 1; i < arr.length; i++) {
     let current = arr[i];
     let j = i - 1;
@@ -9,6 +9,6 @@ const insertionSort = (arr) => {
     arr[j + 1] = current;
   }
   return arr;
-};
+}
 
 console.log(insertionSort(arr)); // -7, -2 , 5, 1000
