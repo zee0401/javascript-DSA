@@ -46,6 +46,11 @@ const obj = {
 };
 console.log(obj, JSON.stringify(obj));
 
+// Split and Join
+console.log(str.split(""));
+const subString = str.split(" ");
+console.log(subString.join(" "));
+
 // String Start and End
 console.log(str.startsWith("Vishal")); // true
 console.log(str.endsWith("Developer")); // true
