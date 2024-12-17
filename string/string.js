@@ -52,14 +52,20 @@ console.log(obj, JSON.stringify(obj));
 console.log(str.substring(6, 30));
 console.log(str.slice(-10, -1));
 
+// ----------------------------------------
+
 // Split and Join
 console.log(str.split(""));
 const subString = str.split(" ");
 console.log(subString.join(" "));
 
+// ----------------------------------------
+
 // String Start and End
 console.log(str.startsWith("Vishal")); // true
 console.log(str.endsWith("Developer")); // true
+
+// ----------------------------------------
 
 // Trim and Case Conversion
 const trimStr = str.trim();
@@ -69,8 +75,16 @@ console.log(trimStr, trimStr.length);
 console.log(str.toLowerCase());
 console.log(str.toUpperCase());
 
+// ----------------------------------------
+
 // Concatenate Strings
 const lastName = "Shaikh";
 console.log(firstName + lastName);
 console.log(`${firstName} ${lastName} is a Best Developer`);
 console.log(firstName.concat(lastName, " is a", " Best"));
+
+// ----------------------------------------
+
+// Compare Two Strings
+let anotherName = "Vishal";
+console.log(firstName.localeCompare(anotherName)); // -1 (& if strings are equal it return 0)
