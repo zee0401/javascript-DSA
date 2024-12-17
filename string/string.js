@@ -46,6 +46,14 @@ const obj = {
 };
 console.log(obj, JSON.stringify(obj));
 
+// Trim and Case Conversion
+const trimStr = str.trim();
+const trimStrStart = str.trimStart();
+const trimStrEnd = str.trimEnd();
+console.log(trimStr, trimStr.length);
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
+
 // Concatenate Strings
 const lastName = "Shaikh";
 console.log(firstName + lastName);
