@@ -46,6 +46,10 @@ const obj = {
 };
 console.log(obj, JSON.stringify(obj));
 
+// String Start and End
+console.log(str.startsWith("Vishal")); // true
+console.log(str.endsWith("Developer")); // true
+
 // Trim and Case Conversion
 const trimStr = str.trim();
 const trimStrStart = str.trimStart();
