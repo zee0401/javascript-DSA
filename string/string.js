@@ -35,3 +35,9 @@ console.log(obj, JSON.stringify(obj));
 const str = "Zeshan is Best Frontend Developer. Aman is Best Developer. ";
 console.log(str.replace("Zeshan", "Aman")); // "Zeshan is Best Frontend Developer. Aman is Best Developer. "
 console.log(str.replaceAll("Zeshan", "Aman")); // "Zeshan is Best Frontend Developer. Zeshan is Best Developer. "
+
+// Concatenate Strings
+const lastName = "Rajput";
+console.log(firstName + lastName);
+console.log(`${firstName} ${lastName} is a Best Developer`);
+console.log(firstName.concat(lastName, " is a", " Best"));
