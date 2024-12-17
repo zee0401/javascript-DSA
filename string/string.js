@@ -88,3 +88,10 @@ console.log(firstName.concat(lastName, " is a", " Best"));
 // Compare Two Strings
 let anotherName = "Vishal";
 console.log(firstName.localeCompare(anotherName)); // -1 (& if strings are equal it return 0)
+
+// ----------------------------------------
+
+// Check Presence of Character
+console.log(firstName.includes("r")); // false (& if present it return true)
+console.log(firstName.indexOf("i")); // 2 (& if not present it return -1)
+console.log(firstName.lastIndexOf("i")); // 7
