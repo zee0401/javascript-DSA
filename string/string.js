@@ -36,8 +36,18 @@ const str = "Zeshan is Best Frontend Developer. Aman is Best Developer. ";
 console.log(str.replace("Zeshan", "Aman")); // "Zeshan is Best Frontend Developer. Aman is Best Developer. "
 console.log(str.replaceAll("Zeshan", "Aman")); // "Zeshan is Best Frontend Developer. Zeshan is Best Developer. "
 
+// Convert Number and Object to String
+const num = 123;
+console.log(num, num.toString());
+
+const obj = {
+  name: "Zeshan",
+  course: "DSA with Zeshan",
+};
+console.log(obj, JSON.stringify(obj));
+
 // Concatenate Strings
-const lastName = "Rajput";
+const lastName = "Shaikh";
 console.log(firstName + lastName);
 console.log(`${firstName} ${lastName} is a Best Developer`);
 console.log(firstName.concat(lastName, " is a", " Best"));
