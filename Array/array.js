@@ -62,3 +62,12 @@ console.log(isArrayEqual([1, 2, 3], [1, 2, 3]));
 const y = [1, 2, [4, 5, [6, 7]], 8, 9];
 const flattedArray = y.flat(2);
 console.log(flattedArray);
+
+// Deep Copy of Array
+const arrC = [...arr];
+const arrD = Array.from(arr);
+const arrE = arr.concat();
+arrC.splice(1, 4);
+arrD.splice(1, 4);
+arrE.splice(1, 3);
+console.log(arrC, arrD, arrE, arr);
