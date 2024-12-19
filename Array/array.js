@@ -76,3 +76,12 @@ console.log(arrC, arrD, arrE, arr);
 const arrB = arr;
 arrB.splice(1, 4);
 console.log(arrB, arr);
+
+// How to delete, add & update elements from a specific index?
+console.log(arr);
+arr.splice(1, 3);
+console.log(arr);
+arr.splice(1, 0, 2, 3, 4, 5, 6);
+console.log(arr);
+arr.splice(1, 3, 6, 7, 8);
+console.log(arr);
