@@ -71,3 +71,8 @@ arrC.splice(1, 4);
 arrD.splice(1, 4);
 arrE.splice(1, 3);
 console.log(arrC, arrD, arrE, arr);
+
+// Shallow Copy of Array
+const arrB = arr;
+arrB.splice(1, 4);
+console.log(arrB, arr);
