@@ -57,3 +57,8 @@ const isArrayEqual = (arr1, arr2) => {
 };
 
 console.log(isArrayEqual([1, 2, 3], [1, 2, 3]));
+
+// Flat: [1, 2, 4, 5, 6, 7, 8, 9]
+const y = [1, 2, [4, 5, [6, 7]], 8, 9];
+const flattedArray = y.flat(2);
+console.log(flattedArray);
