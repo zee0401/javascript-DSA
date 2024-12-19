@@ -8,3 +8,11 @@ const firstElement = arr[0]; // O(1)
 const arrLength = arr.length;
 const lastElement = arr[arrLength - 1];
 console.log(firstElement, arrLength, lastElement);
+
+// How do you remove the last element from an array?
+const lastElement1 = arr.pop(); // O(1)
+console.log(arr, lastElement1);
+
+// How do you add an element to the start of an array?
+arr.unshift(0); // O(N)
+console.log(arr);
