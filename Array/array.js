@@ -20,3 +20,21 @@ console.log(arr);
 // How do you remove the first element from an array?
 arr.shift(); // O(N)
 console.log(arr);
+
+// How do you loop through an array in JavaScript?
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+arr.forEach((x, i) => {
+  console.log(x);
+});
+
+for (let x of arr) {
+  console.log(x);
+}
+
+// How to concatenate two arrays in JavaScript?
+const newArr = [...arr, ...arrE];
+const newArr2 = arr.concat(arrE);
+console.log(newArr, newArr2);
