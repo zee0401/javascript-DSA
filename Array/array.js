@@ -16,3 +16,7 @@ console.log(arr, lastElement1);
 // How do you add an element to the start of an array?
 arr.unshift(0); // O(N)
 console.log(arr);
+
+// How do you remove the first element from an array?
+arr.shift(); // O(N)
+console.log(arr);
