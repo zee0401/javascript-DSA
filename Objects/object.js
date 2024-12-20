@@ -30,3 +30,18 @@ person.name = "Vivek"; // Updating name key
 person.location = "New Delhi"; // Adding location Key
 delete person.projects; // Deleting projects key
 console.log(person);
+
+// Shallow Copy
+const person2 = person;
+person2.isEducator = false;
+
+// Deep Copy
+const person3 = Object.assign({}, person);
+
+// Nested Objects still do shallow copy here, there for we use lodash cloneDeep method(out of scope for this course)
+person3.skills = null;
+
+// Using freeze and seal methods
+Object.freeze(person); // User can't add or delete or update keys
+console.log(person);
+console.log(Object.isFrozen(person)); // true
