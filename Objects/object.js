@@ -24,3 +24,9 @@ console.log(person["name"]); // Vishal
 // Checking if a key exists in the object
 console.log(person.hasOwnProperty("name")); // true
 console.log(person.hasOwnProperty("last Name")); // false
+
+// Adding, deleting, and updating keys
+person.name = "Vivek"; // Updating name key
+person.location = "New Delhi"; // Adding location Key
+delete person.projects; // Deleting projects key
+console.log(person);
