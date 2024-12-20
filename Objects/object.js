@@ -18,6 +18,9 @@ const person = {
 // Accessing properties using Dot Operator
 console.log(person.age); // 21
 
+// Accessing properties using []
+console.log(person["name"]); // Vishal
+
 // Checking if a key exists in the object
 console.log(person.hasOwnProperty("name")); // true
 console.log(person.hasOwnProperty("last Name")); // false
