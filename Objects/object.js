@@ -14,3 +14,6 @@ const person = {
     return "start walking";
   },
 };
+
+// Accessing properties using Dot Operator
+console.log(person.age); // 21
