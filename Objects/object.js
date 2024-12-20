@@ -45,3 +45,11 @@ person3.skills = null;
 Object.freeze(person); // User can't add or delete or update keys
 console.log(person);
 console.log(Object.isFrozen(person)); // true
+
+Object.seal(person); // User can't add or delete keys but can update the value
+console.log(Object.isSealed(person)); // true
+
+Keys, Values & Entries;
+console.log(Object.keys(person)); // ["name" , "age", "isEducator", ...]
+console.log(Object.values(person)); // ["Vishal", 21, true, ...]
+console.log(Object.entries(person)); // [["name", "Vishal"], ["age", 21], ["isEducator", true], ...]
